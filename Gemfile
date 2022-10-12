@@ -55,6 +55,7 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'dotenv-rails'
+  gem 'shoulda-matchers'
 end
 
 group :development do
