@@ -1,4 +1,4 @@
-<h1>Add a new song:</h1>
+<%= render "layouts/errors", :object => @song %>
 
 <%= form_for [@album, @song] do |f| %>
   <%= f.label :name %>

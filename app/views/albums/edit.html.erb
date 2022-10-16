@@ -1,0 +1,20 @@
+<h1>Edit album</h1>
+
+<%= render "layouts/album_form" %>
+
+<%= form_for @album do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :genre %>
+  <%= f.text_field :genre %>
+  <%= f.submit  %>
+<% end %>
+
+<% if @album.errors.any? %>
+  <h3>Please fix these errors:</h3>
+  <ul>
+    <% @album.errors.full_messages.each do |message| %>
+      <li><%= message %></li>
+    <% end %>
+  </ul>
+<% end %>

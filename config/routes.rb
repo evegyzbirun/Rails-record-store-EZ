@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   root to: 'albums#index'
 
   resources :albums do
-    resources :songs, except: [:destroy]
+    resources :songs
   end
 end
