@@ -12,7 +12,7 @@ class SongsController < ApplicationController
     if @song.save
       redirect_to album_path(@album)
     else
-      render :new, status: :unprocessable_entity
+      render :new,  status: :unprocessable_entity
     end
   end
 
